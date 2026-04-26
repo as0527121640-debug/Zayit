@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
     alias(libs.plugins.kotlinx.serialization)
+    alias(libs.plugins.android.library)
 }
 
 kotlin {
@@ -13,6 +14,12 @@ kotlin {
             .get()
             .toInt(),
     )
+
+    androidLibrary {
+        namespace = "io.github.kdroidfilter.pagination"
+        compileSdk = 35
+        minSdk = 21
+    }
 
     jvm()
 

@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
+    alias(libs.plugins.android.library)
 }
 
 kotlin {
@@ -12,6 +13,12 @@ kotlin {
             .get()
             .toInt(),
     )
+
+    androidLibrary {
+        namespace = "io.github.kdroidfilter.htmlparser"
+        compileSdk = 35
+        minSdk = 21
+    }
 
     jvm()
 

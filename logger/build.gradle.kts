@@ -1,9 +1,16 @@
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.kotlinx.serialization)
+    alias(libs.plugins.android.library)
 }
 
 kotlin {
+
+    androidLibrary {
+        namespace = "io.github.kdroidfilter.logger"
+        compileSdk = 35
+        minSdk = 21
+    }
 
     jvm()
     jvmToolchain(
@@ -18,6 +25,10 @@ kotlin {
 
         jvmMain.dependencies {
             implementation(libs.sentry.core)
+        }
+
+        androidMain.dependencies {
+            implementation(libs.sentry.android)
         }
     }
 }

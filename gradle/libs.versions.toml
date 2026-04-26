@@ -46,6 +46,7 @@ mockk = "1.14.9"
 kotlinx-coroutines-test = "1.10.2"
 sentry = "6.5.0"
 sentrySdk = "8.40.0"
+sentryAndroidSdk = "8.40.0"
 graalHotspot = "22.0.0.2"
 intellijPlatformIcons = "253.31033.145"
 jbrApi = "1.10.1"
@@ -128,6 +129,7 @@ adaptive-layout = { module = "org.jetbrains.compose.material3.adaptive:adaptive-
 adaptive-navigation = { module = "org.jetbrains.compose.material3.adaptive:adaptive-navigation", version.ref = "adaptiveNavigation" }
 split-pane-desktop = { module = "org.jetbrains.compose.components:components-splitpane-desktop", version.ref = "compose"}
 sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
+android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
 zmanim = { module = "com.kosherjava:zmanim", version.ref = "zmanim" }
 zstd-jni = { module = "com.github.luben:zstd-jni", version.ref = "zstdJni" }
 lucene-core = { module = "org.apache.lucene:lucene-core", version.ref = "lucene" }
@@ -152,6 +154,7 @@ structured-coroutines-annotations = { module = "io.github.santimattius:structure
 
 # Sentry
 sentry-core = { module = "io.sentry:sentry", version.ref = "sentrySdk" }
+sentry-android = { module = "io.sentry:sentry-android", version.ref = "sentryAndroidSdk" }
 graal-hotspot-library = { module = "org.graalvm.nativeimage:graal-hotspot-library", version.ref = "graalHotspot" }
 
 # Testing
