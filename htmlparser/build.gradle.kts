@@ -14,7 +14,7 @@ kotlin {
             .toInt(),
     )
 
-    androidLibrary {
+    android {
         namespace = "io.github.kdroidfilter.htmlparser"
         compileSdk = 35
         minSdk = 21

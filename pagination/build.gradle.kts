@@ -15,7 +15,7 @@ kotlin {
             .toInt(),
     )
 
-    androidLibrary {
+    android {
         namespace = "io.github.kdroidfilter.pagination"
         compileSdk = 35
         minSdk = 21

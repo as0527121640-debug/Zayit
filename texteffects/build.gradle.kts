@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = "io.github.kdroidfilter.texteffects"
         compileSdk = 35
         minSdk = 21
