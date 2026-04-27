@@ -24,6 +24,5 @@ android {
 dependencies {
     implementation(project(":SeforimApp"))
     implementation(libs.androidx.activityCompose)
-    implementation(compose.foundation)
-    implementation(compose.material3)
+
 }
