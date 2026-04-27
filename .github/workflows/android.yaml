@@ -24,13 +24,13 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Build Android Debug APK
-        run: ./gradlew :SeforimApp:assembleDebug --no-daemon --stacktrace
+        run: ./gradlew :androidApp:assembleDebug --no-daemon --stacktrace
 
       - name: Upload APK
         if: success()
         uses: actions/upload-artifact@v6
         with:
           name: android-debug-apk
-          path: SeforimApp/build/outputs/apk/debug/*.apk
+          path: androidApp/build/outputs/apk/debug/*.apk
           if-no-files-found: warn
           retention-days: 14
