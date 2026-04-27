@@ -37,7 +37,7 @@ sentry {
 kotlin {
     android {
         namespace = "io.github.kdroidfilter.seforimapp"
-        compileSdk = 35
+        compileSdk = 36
         minSdk = 21
     }
 

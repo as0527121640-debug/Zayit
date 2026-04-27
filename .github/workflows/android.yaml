@@ -23,8 +23,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Patch SeforimLibrary AGP version
-        run: sed -i 's/agp = "8.12.3"/agp = "9.1.0"/' SeforimLibrary/gradle/libs.versions.toml
+      - name: Patch SeforimLibrary AGP and compileSdk versions
+        run: |
+          sed -i 's/agp = "8.12.3"/agp = "9.1.0"/' SeforimLibrary/gradle/libs.versions.toml
+          find SeforimLibrary -name "build.gradle.kts" -exec sed -i 's/compileSdk = 35/compileSdk = 36/g' {} +
 
       - name: Build Android Debug APK
         run: ./gradlew :androidApp:assembleDebug --no-daemon --stacktrace

@@ -16,7 +16,7 @@ kotlin {
 
     android {
         namespace = "io.github.kdroidfilter.htmlparser"
-        compileSdk = 35
+        compileSdk = 36
         minSdk = 21
     }
 

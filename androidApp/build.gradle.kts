@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "io.github.kdroidfilter.seforimapp.androidApp"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "io.github.kdroidfilter.seforimapp.androidApp"
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
     }

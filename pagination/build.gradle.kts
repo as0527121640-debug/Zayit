@@ -17,7 +17,7 @@ kotlin {
 
     android {
         namespace = "io.github.kdroidfilter.pagination"
-        compileSdk = 35
+        compileSdk = 36
         minSdk = 21
     }
 
